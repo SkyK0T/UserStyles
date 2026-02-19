@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           👉RuTube👈 Убрать логотип
+@namespace      https://github.com/SkyK0T/UserStyles
+@version        1.0.0
+@description    RuTube Убрать логотип
+@author         👉👈
+==/UserStyle== */
+@-moz-document domain("rutube.ru") {
+	/* Убираем только картинку логотипа (img + svg) */
+	header [class *= "logo"] img,
+	header [class *= "logo"] svg,
+	img[alt *= "Rutube" i],
+	img[src *= "logo" i] {
+		display: none !important;
+	}
+}
